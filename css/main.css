@@ -1,0 +1,983 @@
+/*
+* Mate - Bootstrap 4 Template
+* Build Date: December 2017
+* Last updated: December 2017
+* Version: 1.0
+* Author: UIdeck
+* Copyright (C) 2018 UIdeck
+*/
+/* ------------------------------------- */
+/* TABLE OF CONTENTS
+/* -------------------------------------
+  1. IMPORT GOOGLE FONTS
+  2. GENERAL
+    -2.1 SECTION TITLE
+    -2.2 BUTTONS
+    -2.3 SOCIAL ICON
+    -2.4 PRE LOADER
+    -2.5 SCROLL TO UP
+  3. HERO AREA 
+  4. NAVBAR
+  5. SERVICES SECTION
+  6. FEATURES SECTION
+  7. VIDEO PROMO SECTION
+  8. PORTFOLIO SECTION
+  9. PRICING TABLE 
+  10. COUNTER SECTION
+  11. TESTIMONIAL AREA
+  12. TEAM SECTION
+  13. BLOG SECTION
+  14. CONTACT SECTION
+  15. FOOTER SECTION
+    -15.1 COMING SOON PAGE
+  ------------------------------------- */
+/* ==========================================================================
+   1. IMPORT GOOGLE FONTS
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Dosis|Open+Sans");
+/* ==========================================================================
+  2. GENERAL
+  ========================================================================== */
+.whitelines {
+  margin: auto;
+  width: 70px;
+  position: relative;
+  border-top: 2px solid white;
+  margin-top: 15px; }
+
+body {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
+  overflow-x: hidden; }
+
+html {
+  overflow-x: hidden; }
+
+p {
+  font-size: 14px;
+  line-height: 26px; }
+
+a:hover, a:focus {
+  color: #2e777f; }
+
+a {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  color: #2e777f; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Dosis", sans-serif, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none; }
+
+a:not([href]):not([tabindex]) {
+  color: #fff; }
+
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+  color: #2e777f; }
+
+/* ==========================================================================
+   2.1 Section Title
+   ========================================================================== */
+.section {
+  padding: 80px 0; }
+
+.section-header {
+  color: #fff;
+  margin-bottom: 40px;
+  text-align: center; }
+  .section-header .section-title {
+    font-size: 42px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333;
+    position: relative; }
+    .section-header .section-title span {
+      color: #2e777f; }
+  .section-header .section-subtitle {
+    margin-top: 15px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400; }
+  .section-header .lines {
+    margin: auto;
+    width: 70px;
+    position: relative;
+    border-top: 2px solid #2e777f;
+    margin-top: 15px; }
+
+/* ==========================================================================
+   2.2 Buttons
+   ========================================================================== */
+.btn {
+  font-size: 14px;
+  padding: 11px 40px;
+  border-radius: 0px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: inline-block; }
+
+.btn:focus,
+.btn:active {
+  box-shadow: none;
+  outline: none;
+  color: #fff; }
+
+.btn-common {
+  border: 1px solid #2e777f;
+  background: #2e777f;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  border-radius: 30px; }
+  .btn-common:hover {
+    color: #fff;
+    background: #37707d;
+    border-color: #37707d;
+    transition: all .50s ease-in-out;
+    -moz-transition: all .50s ease-in-out;
+    -webkit-transition: all .50s ease-in-out; }
+
+.btn-border {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 4px; }
+  .btn-border:hover {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #2e777f; }
+
+.btn-lg {
+  padding: 14px 33px;
+  text-transform: uppercase;
+  font-size: 16px; }
+
+.btn-rm {
+  padding: 7px 0px;
+  color: #999;
+  text-transform: capitalize; }
+  .btn-rm i {
+    vertical-align: middle; }
+
+button:focus {
+  outline: none !important; }
+
+.clear {
+  clear: both; }
+
+/* ==========================================================================
+   2.3 Social Iocns
+   ========================================================================== */
+.social-icons {
+  margin-top: 40px; }
+
+.social-icons ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.social-icons ul li {
+  display: inline; }
+
+.social-icons ul li a {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background: #ddd;
+  font-size: 16px; }
+
+.social-icons ul li a:hover {
+  color: #fff; }
+
+.facebook a {
+  color: #4867AA; }
+
+.facebook a:hover {
+  background: #4867AA; }
+
+.twitter a {
+  color: #1DA1F2; }
+
+.twitter a:hover {
+  background: #1DA1F2; }
+
+.google-plus a {
+  color: #DD4D42; }
+
+.google-plus a:hover {
+  background: #DD4D42; }
+
+.youtube a {
+  color: #DF2926; }
+
+.youtube a:hover {
+  background: #DF2926; }
+
+.linkedin a {
+  color: #007BB6; }
+
+.linkedin a:hover {
+  background: #007BB6; }
+
+.pinterest a {
+  color: #BD081C; }
+
+.pinterest a:hover {
+  background: #BD081C; }
+
+.dribbble a {
+  color: #EA4C89; }
+
+.dribbble a:hover {
+  background: #EA4C89; }
+
+.behance a {
+  color: #0B7CFF; }
+
+.behance a:hover {
+  background: #0B7CFF; }
+
+/* ==========================================================================
+2.4  Pre Loader
+========================================================================== */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  z-index: 9999999999; }
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  top: 45%;
+  position: relative;
+  margin: 0px auto; }
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #2e777f;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out; }
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s; }
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1); } }
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0); }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
+/* ==========================================================================
+-2.5 Scroll To Up
+========================================================================== */
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 18px;
+  right: 15px; }
+
+.back-to-top i {
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #2e777f;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
+/* ==========================================================================
+3. Hero Area
+========================================================================== */
+#hero-area {
+  background: url(../img/landing4.jpg) fixed no-repeat;
+  background-size: 1900px auto;
+  color: #fff;
+  overflow: hidden;
+  position: relative; }
+  #hero-area .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #2e777f;
+    opacity: 0.9; }
+  #hero-area .contents {
+    padding: 200px 0 130px; }
+    #hero-area .contents h1 {
+      color: #fff;
+      text-shadow: 6px 6px #2e777f;
+      font-size: 150px;
+      font-weight: 700;
+      margin-bottom: 25px; }
+    #hero-area .contents p {
+      font-family: "Dosis", sans-serif;
+      margin: 25px;
+      font-size: 42px;
+      color: #fff;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.5px; }
+    #hero-area .contents .btn {
+      margin: 25px 25px 0px 0px;
+      text-transform: uppercase; }
+  #hero-area .banner_bottom_btn {
+    margin-top: 40px; }
+    #hero-area .banner_bottom_btn i {
+      color: #fff;
+      font-size: 48px;
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear; }
+      #hero-area .banner_bottom_btn i:hover {
+        color: #2e777f; }
+
+/* ==========================================================================
+   4. Navbar Style
+   ========================================================================== */
+.navbar-brand {
+  position: relative;
+  padding-left: 15px;
+  padding-top: 15px;
+  color: white; }
+
+.top-nav-collapse {
+  z-index: 999999;
+  top: 0px !important;
+  padding: 0;
+  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  background: #FFF !important; }
+  .top-nav-collapse .navbar-brand {
+    top: 0px; }
+  .top-nav-collapse .navbar-nav .nav-link {
+    color: #333 !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important; }
+    .top-nav-collapse .navbar-nav .nav-link:hover {
+      color: #2e777f !important; }
+  .top-nav-collapse .logo {
+    color: #333333; }
+  .top-nav-collapse .brand {
+    filter: invert(100%); }
+  .top-nav-collapse .slicknav_btn {
+    border-color: #333333; }
+  .top-nav-collapse .slicknav_menu .slicknav_icon-bar {
+    background: #333333; }
+  .top-nav-collapse .navbar-nav .nav-link.active {
+    color: #fff !important; }
+
+.indigo {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #fff;
+  padding: 0 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 40px;
+  border-radius: 30px;
+  background: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.logo {
+  color: #fff;
+  text-shadow: 2px 2px #2e777f; }
+
+.slicknav_btn {
+  border-color: white; }
+
+.slicknav_menu .slicknav_icon-bar {
+  background: white; }
+
+.navbar-expand-lg .navbar-nav li a:hover,
+.navbar-expand-lg .navbar-nav li .active > a,
+.navbar-expand-lg .navbar-nav li a:focus {
+  color: #2e777f; }
+
+.navbar .nav-link.active {
+  color: #fff !important;
+  background: #2e777f; }
+
+.dropdown-toggle::after {
+  display: none; }
+
+.navbar-toggler {
+  display: none; }
+
+.mobile-menu {
+  display: none; }
+
+.slicknav_menu {
+  display: none; }
+
+@media screen and (max-width: 991px) {
+  h1.wow {
+    font-size: 85px !important; }
+
+  .navbar-header {
+    width: 100%; }
+
+  .navbar-brand {
+    position: absolute;
+    padding: 15px;
+    top: 0; }
+    .navbar-brand img {
+      width: 70%; }
+
+  #mobile-menu {
+    display: block; }
+
+  .slicknav_menu {
+    display: block; }
+
+  .slicknav_nav .active a {
+    background: #2e777f;
+    color: #fff; }
+
+  .slicknav_nav a:hover, .slicknav_nav .active {
+    color: #2e777f;
+    background: #f8f9fa; }
+
+  .slicknav_nav .dropdown li a.active {
+    background: #f8f9fa;
+    color: #2e777f; } }
+/* ==========================================================================
+  5. Services section
+   ========================================================================== */
+.item-boxes {
+  text-align: center;
+  padding: 0px 15px;
+  margin-bottom: 15px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+  .item-boxes .icon {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    display: inline-block;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #2e777f; }
+    .item-boxes .icon i {
+      font-size: 26px;
+      line-height: 60px;
+      color: #fff; }
+  .item-boxes h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px; }
+
+.item-boxes:hover .icon i {
+  color: #fff; }
+
+/* ==========================================================================
+ 6. Features Section Style
+  ========================================================================== */
+#filler1 {
+  background: url(../img/landing1.jpg) fixed no-repeat;
+  background-size: contain; }
+
+#music {
+  background: url(../img/ISADORE_BACK_zondertitels.jpg) fixed no-repeat;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+  position: relative; }
+  #music a {
+    color: white; }
+  #music .section-title {
+    color: #fff; }
+  #music .section-subtitle {
+    color: #fff; }
+  #music .icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    text-align: center;
+    position: relative;
+    z-index: 1; }
+  #music .box-item .icon {
+    text-align: center;
+    float: left;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+    #music .box-item .icon i {
+      color: white;
+      line-height: 75px;
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear; }
+  #music .box-item .text {
+    padding-left: 80px;
+    padding-top: 17px;
+    color: white;
+    font-weight: 700;
+    font-size: 23px;
+    text-transform: uppercase; }
+    #music .box-item .text p {
+      font-size: 14px;
+      line-height: 26px; }
+  #music .show-box img {
+    position: absolute;
+    bottom: -120px; }
+
+/* ==========================================================================
+  7. Video promo Style
+   ========================================================================== */
+.photos {
+  background: #2e777f;
+  color: #fff;
+  overflow: hidden;
+  position: relative; }
+  .photos .section-header .section-title {
+    color: white; }
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #2e777f;
+  opacity: 0.9;
+  filter: alpha(opacity=90); }
+
+/* ==========================================================================
+ 8. Portfolio Section
+  ========================================================================== */
+.mix {
+  padding: 10px; }
+
+.portfolio-img {
+  overflow: hidden;
+  display: block;
+  position: relative; }
+  .portfolio-img img {
+    width: 100%; }
+
+.shot-item {
+  border-radius: 4px;
+  background: #fff;
+  position: relative; }
+  .shot-item img {
+    width: 100%; }
+  .shot-item .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0; }
+
+.shot-item:hover .overlay {
+  opacity: 1; }
+
+.overlay .item-icon {
+  height: 48px;
+  width: 48px;
+  line-height: 48px;
+  color: #2e777f;
+  left: 50%;
+  margin-left: -24px;
+  margin-top: -24px;
+  top: 50%;
+  position: absolute;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid #2e777f;
+  border-radius: 50%; }
+  .overlay .item-icon:hover {
+    background: #2e777f;
+    color: #fff; }
+
+.shot-item:hover .item-icon {
+  visibility: visible;
+  opacity: 1; }
+
+/* ==========================================================================
+9. Pricing Table
+========================================================================== */
+.table-left {
+  margin-top: 20px; }
+
+/* ==========================================================================
+ 10. Counter Section Style
+ ========================================================================== */
+.merch {
+  background-image: url(../img/merch.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .merch .section-title {
+    color: #fff; }
+  .merch .section-subtitle {
+    color: #fff; }
+  .merch .facts-item {
+    text-align: center;
+    color: #fff; }
+    .merch .facts-item .icon {
+      margin-bottom: 30px; }
+      .merch .facts-item .icon i {
+        font-size: 50px;
+        color: #fff; }
+    .merch .facts-item .fact-count h3 {
+      font-size: 35px;
+      color: #fff;
+      margin-bottom: 15px; }
+    .merch .facts-item .fact-count h4 {
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff; }
+
+/* ==========================================================================
+11. Testimonial Section Style
+ ========================================================================== */
+#testimonial {
+  background: url(../img/testimonial-bg.jpg) fixed no-repeat;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+  position: relative; }
+
+.testimonial-item {
+  text-align: center; }
+  .testimonial-item img {
+    width: 80px;
+    border: 3px solid #fff;
+    height: 80px;
+    border-radius: 50%; }
+  .testimonial-item .testimonial-text h3 {
+    font-size: 15px;
+    font-weight: 700; }
+  .testimonial-item .testimonial-text span {
+    font-size: 14px;
+    color: #999; }
+  .testimonial-item .testimonial-text p {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 36px 10px 30px 10px;
+    margin: 0;
+    line-height: 30px; }
+
+.owl-theme .owl-controls .owl-page span {
+  background: #2e777f; }
+
+.owl-theme .owl-controls {
+  margin-top: 20px; }
+
+/* ==========================================================================
+ 12. Team Section
+  ========================================================================== */
+.team-inner p {
+  text-align: justify; }
+
+.single-team {
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 0px;
+  background: #2e777f;
+  overflow: hidden; }
+  .single-team img {
+    width: 100%; }
+  .single-team .team-inner {
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+  .single-team .team-details {
+    text-align: center;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 0px;
+    background: #f1f1f1;
+    padding: 15px; }
+    .single-team .team-details .team-title {
+      margin-bottom: 5px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #333; }
+    .single-team .team-details p {
+      color: #333; }
+  .single-team .social-list li {
+    display: inline-block; }
+    .single-team .social-list li a {
+      display: block;
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+      width: 34px;
+      margin: 2px;
+      color: #2e777f;
+      font-size: 14px;
+      background: #fff;
+      border-radius: 50px;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      transition: 0.5s; }
+  .single-team .social-list .facebook a:hover {
+    background: #4867aa;
+    color: #fff; }
+  .single-team .social-list .twitter a:hover {
+    background: #1da1f2;
+    color: #fff; }
+  .single-team .social-list .google-plus a:hover {
+    background: #dd4d42;
+    color: #fff; }
+  .single-team .social-list .linkedin a:hover {
+    background: #007bb6;
+    color: #fff; }
+
+.single-team:hover {
+  opacity: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+/* ==========================================================================
+  13. Blog 
+   ========================================================================== */
+#blog .blog-item-wrapper {
+  background: #fff;
+  border-radius: 0px;
+  -webkit-transition: transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+  -moz-transition: transform 0.2s linear, -moz-box-shadow 0.2s linear;
+  transition: transform 0.2s linear, box-shadow 0.2s linear; }
+#blog .blog-item-wrapper:hover .blog-item-img:before {
+  opacity: 1;
+  height: 100%;
+  width: 100%; }
+#blog .blog-item-img {
+  position: relative; }
+  #blog .blog-item-img img {
+    width: 100%; }
+#blog .blog-item-text {
+  padding: 20px 0; }
+  #blog .blog-item-text h3 {
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px; }
+    #blog .blog-item-text h3 a {
+      color: #333; }
+      #blog .blog-item-text h3 a:hover {
+        color: #2e777f; }
+  #blog .blog-item-text p {
+    line-height: 25px;
+    margin-bottom: 20px; }
+
+.meta-tags {
+  margin-bottom: 20px; }
+  .meta-tags span {
+    color: #999;
+    margin-right: 10px; }
+    .meta-tags span i {
+      margin-right: 5px; }
+    .meta-tags span a {
+      color: #999; }
+      .meta-tags span a:hover {
+        color: #2e777f; }
+
+/* ==========================================================================
+  14. Contact Us
+  ========================================================================== */
+.contact-us h3 {
+  font-size: 36px;
+  margin-bottom: 45px; }
+.contact-us p span {
+  padding-left: 10px; }
+
+#contact {
+  background: #343a40;
+  color: #fff;
+  position: relative; }
+
+.btn.disabled, .btn:disabled {
+  opacity: 1; }
+
+.text-danger {
+  font-size: 14px;
+  margin-top: 10px; }
+
+.list-unstyled li {
+  color: #d9534f; }
+
+/* ==========================================================================
+15. Footer Style
+ ========================================================================== */
+footer {
+  background: #292f35;
+  padding: 20px 0; }
+
+.footer-links {
+  line-height: 48px; }
+  .footer-links li {
+    float: left; }
+    .footer-links li a {
+      color: #fff;
+      margin-right: 15px;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out; }
+      .footer-links li a:hover {
+        color: #2e777f; }
+
+.copyright {
+  margin-top: 10px;
+  float: right; }
+  .copyright p {
+    color: #fff; }
+    .copyright p a {
+      color: #fff; }
+      .copyright p a:hover {
+        color: #2e777f; }
+
+/*Ingmar doet ook iets*/
+.nav-link {
+  font-family: "Dosis", sans-serif;
+  font-size: 20px; }
+
+.fa-2x {
+  vertical-align: middle; }
+
+.fa-3x {
+  vertical-align: middle; }
+
+.showMonth {
+  background: #111;
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+  height: 18px;
+  text-transform: uppercase;
+  display: block; }
+
+.showDay {
+  border: 2px solid #111;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #111111;
+  border-top: none;
+  height: 22px;
+  line-height: 22px;
+  display: block; }
+
+.showDate {
+  width: 33px;
+  font-size: 20px;
+  text-align: center; }
+
+.show {
+  padding: 3px; }
+
+.showText {
+  padding-left: 10px; }
+
+.showName {
+  color: #111; }
+
+.showLocation {
+  color: #666666; }
+
+#futureGigs {
+  width: 100%; }
+
+.eptext {
+  font-size: 15px; }
+
+.reviews {
+  padding-top: 30px; }
+
+a:hover {
+  text-decoration: none; }
+
+footer {
+  color: white;
+  text-align: right; }
+
+.logo {
+  font-family: "Dosis", sans-serif;
+  font-size: 35px; }
+
+.brand {
+  height: 50px;
+  vertical-align: bottom; }
+
+.subBrand {
+  vertical-align: text-bottom; }
+
+/*# sourceMappingURL=main.css.map */

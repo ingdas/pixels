@@ -340,7 +340,7 @@ button:focus {
 3. Hero Area
 ========================================================================== */
 #hero-area {
-  background: url(../img/landing4.jpg) fixed no-repeat;
+  background: url(../img/landing.jpg) fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -481,8 +481,6 @@ button:focus {
     position: absolute;
     padding: 15px;
     top: 0; }
-    .navbar-brand img {
-      width: 70%; }
 
   #mobile-menu {
     display: block; }
@@ -539,7 +537,7 @@ button:focus {
  6. Features Section Style
   ========================================================================== */
 #filler1 {
-  background: url(../img/landing1.jpg) fixed no-repeat;
+  background: url(../img/fill1.jpg) fixed no-repeat;
   background-size: contain; }
 
 #music {

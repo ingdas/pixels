@@ -671,8 +671,13 @@ button:focus {
   background-size: contain;
 }
 
+#filler2 {
+  background: url(../img/fill2.jpg) fixed no-repeat;
+  background-size: cover;
+}
+
 #music {
-  background: url(../img/ISADORE_BACK_zondertitels.jpg) fixed no-repeat;
+  background: url(../img/fillMusic.jpg) fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;

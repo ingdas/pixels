@@ -671,8 +671,18 @@ button:focus {
   background-size: contain;
 }
 
+#fillerPlay {
+  background: url(../img/merch.jpg) fixed no-repeat;
+  background-size: cover;
+}
+
 #filler2 {
   background: url(../img/fill2.jpg) fixed no-repeat;
+  background-size: cover;
+}
+
+#fillerFig {
+  background: url(../img/fillFig.png) fixed no-repeat;
   background-size: cover;
 }
 
@@ -847,17 +857,7 @@ button:focus {
 /* ==========================================================================
  10. Counter Section Style
  ========================================================================== */
-.merch {
-  background-image: url(../img/merch.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  .section-title {
-    color: #fff;
-  }
-  .section-subtitle {
-    color: #fff;
-  }
+#playlist {
 
   .facts-item {
     text-align: center;
@@ -940,7 +940,7 @@ button:focus {
 }
 
 .team-inner p {
-  text-align: justify;
+  text-align: left;
 }
 
 .single-team {
@@ -1241,8 +1241,4 @@ footer {
 .brand {
   height: 50px;
   vertical-align: bottom;
-}
-
-.subBrand {
-  vertical-align: text-bottom;
 }

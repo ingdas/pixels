@@ -43,7 +43,6 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-
 </head>
 <body>
 
@@ -53,15 +52,16 @@
     <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a href="index.html" class="navbar-brand">
-                <span class="logo"><img class="brand" src="img/brand.png"> THE PIXELS</span><span class="subBrand"> - Partyband</span>
-            </a>
+            <span class="navbar-brand">
+                <span class="logo"><img class="brand" src="img/brand.png"> THE PIXELS</span>
+            </span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
                     aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="lnr lnr-menu"></i>
             </button>
         </div>
         <div class="collapse navbar-collapse" id="main-navbar">
+            <span class="subBrand"> -&nbsp;Partyband</span>
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#hero-area">Home</a>
@@ -73,19 +73,16 @@
                     <a class="nav-link page-scroll" href="#leden">Leden</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#music">Music</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link page-scroll" href="#gigs">Gigs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#photos">Photos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#ep">Reviews</a>
+                    <a class="nav-link page-scroll" href="#highlights">Highlights</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#merch">Merch</a>
+                    <a class="nav-link page-scroll" href="#playlist">Playlist</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#contact">Contact</a>
@@ -105,7 +102,7 @@
                     <a class="page-scroll" href="#bio">Bio</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#music">Music</a>
+                    <a class="page-scroll" href="#leden">Leden</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#gigs">Gigs</a>
@@ -114,10 +111,10 @@
                     <a class="page-scroll" href="#photos">Photos</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#ep">EP</a>
+                    <a class="page-scroll" href="#highlights">Highlights</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#merch">Merch</a>
+                    <a class="page-scroll" href="#playlist">Playlist</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -241,7 +238,7 @@
                     <div class="team-details">
                         <div class="team-inner">
                             <h4 class="team-title">Emiel</h4>
-                            <p>Eens Emiel, Altijd Emiel. Wat zouden de Pixels zijn zonder onze zanger! Val in zwijm door
+                            <p>Eens Emiel, Altijd Emiel. Wat zouden the Pixels zijn zonder onze zanger! Val in zwijm door
                                 onze jonge gangmaker, hij brengt een glimlach op ieder gezicht!</p>
                         </div>
                     </div>
@@ -337,22 +334,11 @@
 
 <!-- Music Section Start -->
 <section id="music" class="section" data-stellar-background-ratio="0.2">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Music</h2>
-            <hr class="lines">
-        </div>
-        <iframe src="https://www.youtube.com/embed/DHaM1S6bHf4" frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
-    </div>
+    <p style="height: 150px"></p>
 </section>
 <!-- Features Section End -->
 
 <!-- Gigs Section -->
-<!--
-http://vi.be/vibe/profile/70e5feca-1c64-44fe-bd49-b424324ceef0/shows/upcoming
-http://vi.be/vibe/profile/70e5feca-1c64-44fe-bd49-b424324ceef0/shows/past
--->
 <section id="gigs" class="section">
     <!-- Container Starts -->
     <div class="container">
@@ -371,12 +357,17 @@ http://vi.be/vibe/profile/70e5feca-1c64-44fe-bd49-b424324ceef0/shows/past
                 <hr class="lines">
                 <h3>Past Gigs</h3>
                 <div id="pastGigs"></div>
+                <div id="pasterGigs"><a href="javascript:more()" target="_blank">Meer...</a></div>
             </div>
         </div>
     </div>
     <!-- Container Ends -->
 </section>
 <!-- Portfolio Section Ends -->
+
+<section id="fillerFig" class="section" data-stellar-background-ratio="0.3">
+    <p style="height: 100px"></p>
+</section>
 
 <!-- Start Photos Section -->
 <section id="photos" class="photos section">
@@ -452,49 +443,73 @@ http://vi.be/vibe/profile/70e5feca-1c64-44fe-bd49-b424324ceef0/shows/past
 </section>
 <!-- End Video Promo Section -->
 <section id="filler2" class="section" data-stellar-background-ratio="0.4">
-    <p style="height: 100px"></p>
+    <p style="height: 200px"></p>
 </section>
 
 <!-- Start EP Section -->
-<div id="ep" class="section">
+<div id="highlights" class="section">
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">Highlights</h2>
             <hr class="lines">
         </div>
-
-        <div class="row">
-            https://www.youtube.com/watch?v=DHaM1S6bHf4
-
-            http://www.veto.be/artikel/the-pixels-of-hoe-een-kotband-uit-de-hand-liep
-
-            https://www.hbvl.be/cnt/dmf20170308_02768907/the-pixels-naar-finale-clash-of-the-coverbands
-
-            http://www.theclashofthecoverbands.com/show/verslagen/item,831,finale-extra-cyclus-België-2016-2017.html
-
-            http://www.theclashofthecoverbands.com/show/bands/item,2048,The-Pixels-(B).html#
-        </div>
         <div class="row reviews">
-            <div class="col-md-6 col-sm-6">
-                <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
+            <div class="col-md-4 col-sm-4">
+                <div class="item-boxes wow fadeInDown" data-wow-delay="0.15s">
                     <div class="icon">
                         <i class="lnr lnr-music-note"></i>
                     </div>
                     <a href="http://www.veto.be/artikel/the-pixels-of-hoe-een-kotband-uit-de-hand-liep/"
                        target="_blank">
-                        <h4>"The pixels is the best band in the history of bands"</h4>
-                        <p>Donald Trump</p>
+                        <h4>The Pixels, of hoe een kotband uit de hand liep</h4>
+                        <p>Veto</p>
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6">
-                <div class="item-boxes wow fadeInDown" data-wow-delay="0.8s">
+            <div class="col-md-4 col-sm-4">
+                <div class="item-boxes wow fadeInDown" data-wow-delay="0.45s">
+                    <div class="icon">
+                        <i class="lnr lnr-music-note"></i>
+                    </div>
+                    <a href="https://www.hbvl.be/cnt/dmf20170308_02768907/the-pixels-naar-finale-clash-of-the-coverbands"
+                       target="_blank">
+                        <h4>The Pixels naar finale Clash of the Coverbands</h4>
+                        <p>Het Belang Van Limburg</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="item-boxes wow fadeInDown" data-wow-delay="0.3s">
+                    <div class="icon">
+                        <i class="lnr lnr-music-note"></i>
+                    </div>
+                    <h4>"The pixels zijn best wel ok"</h4>
+                    <p>Andere coverbands over the Pixels</p>
+                </div>
+            </div>
+        </div>
+        <div class="row reviews">
+            <div class="col-md-4 col-sm-4">
+                <div class="item-boxes wow fadeInDown" data-wow-delay="0.6s">
+                    <div class="icon">
+                        <i class="lnr lnr-music-note"></i>
+                    </div>
+                    <h4>"The pixels is the best band in the history of bands, maybe ever"</h4>
+                    <p>Donald Trump</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <iframe src="https://www.youtube.com/embed/DHaM1S6bHf4" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="item-boxes wow fadeInDown" data-wow-delay="0.75s">
                     <div class="icon">
                         <i class="lnr lnr-music-note"></i>
                     </div>
                     <a href="http://www.veto.be/artikel/the-pixels-of-hoe-een-kotband-uit-de-hand-liep" target="_blank">
-                        <h4>"De pixels zijn best wel ok"</h4>
-                        <p>Andere coverbands over de Pixels</p>
+                        <h4>The Pixels uit Leuven wint finale extra cyclus Regio België</h4>
+                        <p>The Clash of the Cover Bands</p>
                     </a>
                 </div>
             </div>
@@ -503,8 +518,12 @@ http://vi.be/vibe/profile/70e5feca-1c64-44fe-bd49-b424324ceef0/shows/past
 </div>
 <!-- End Pricing Table Section -->
 
+<section id="fillerPlay" class="section" data-stellar-background-ratio="0.4">
+    <p style="height: 200px"></p>
+</section>
+
 <!-- Counter Section Start -->
-<div id="merch" class="merch section" data-stellar-background-ratio="0.5">
+<div id="playlist" class="playlist section" data-stellar-background-ratio="0.5">
     <div class="section-header">
         <h2 class="section-title">Playlist</h2>
         <hr class="whitelines">
@@ -514,43 +533,52 @@ http://vi.be/vibe/profile/70e5feca-1c64-44fe-bd49-b424324ceef0/shows/past
     </div>
     <div class="container">
         <div class="row">
-            Are you gonna go my way – Lenny Kravitz
-            Mercy - Duffy
-            Everybody needs somebody to love – The Blues Brothers
-            Hello – Martin Solveig
-            Like the way I do – Melissa Etheridge
-            ’t Smidje - Laïs
-            Little Talks – Of Monsters and Men
-            Kryptonite – 3 Doors Down
-            Jubel - Klingande
-            As The Bottle runs dry – The Wolfbanes
-            Liberty Song – The Levellers
-            Nobody’s wife – Anouk
-            Don’t let me down – Daya & The Chainsmokers
-            The Bad Touch - Bloodhound Gang
-            Are You Gonna Be My Girl – Jet
-            WWBSVB Medley van: We will rock you, blood sugar, voodoo people, bonkers
-            Wild Dances – Ruslana
-            DUBBEL FOUT Medley van: Jup for Joy, No limit, Ochtendgymnastiek, Rainbow high in the sky
-            Medley: Spring, Ik leef niet meer voor jou, Iedereen is van de wereld
-            You give love a bad name – Bon Jovi
-            In the end – Linkin Park
-            Medley: Proud Mary, Non non rien n’a change, Bro hymn
-            Feel like a woman – Shania Twain
-            Superstition – Stevie Wonder
-            I’m in to folk – The Radios
-            Walking on sunshine – Katrina & The Waves
-            Don’t look back in anger – Oasis
-            Le monde tourne mal – Axelle Red
-            R U Mine – Arctic Monkeys
-            I’m not so tough – Ilse DeLange
-            Black horse & The Cherry Tree – KT Tunstall
-            Oh Darkness – Admiral Freebee
-            Just like a Pill - Pink
-            Anja – Gorki
-            Beer Fear – Lucy Spraggan
-            Weak – Skunk Anansie
-            Lost on you - LP
+            <div class="col-4">
+                <ul>
+                    <li>Are you gonna go my way – Lenny Kravitz</li>
+                    <li>Mercy - Duffy</li>
+                    <li>Everybody needs somebody to love – The Blues Brothers</li>
+                    <li>Hello – Martin Solveig</li>
+                    <li>Like the way I do – Melissa Etheridge</li>
+                    <li>’t Smidje - Laïs</li>
+                    <li>Little Talks – Of Monsters and Men</li>
+                    <li>Kryptonite – 3 Doors Down</li>
+                    <li>Jubel - Klingande</li>
+                    <li>As The Bottle runs dry – The Wolfbanes</li>
+                    <li>Liberty Song – The Levellers</li>
+                    <li>Nobody’s wife – Anouk</li>
+                    <li>Don’t let me down – Daya & The Chainsmokers</li>
+                    <li>The Bad Touch - Bloodhound Gang</li>
+                    <li>Are You Gonna Be My Girl – Jet</li>
+                    <li>WWBSVB Medley van: We will rock you, blood sugar, voodoo people, bonkers</li>
+                    <li>Wild Dances – Ruslana</li>
+                    <li>DUBBEL FOUT Medley van: Jump for Joy, No limit, Ochtendgymnastiek, Rainbow high in the sky</li>
+                </ul>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4">
+                <ul>
+                    <li>Medley: Spring, Ik leef niet meer voor jou, Iedereen is van de wereld</li>
+                    <li>You give love a bad name – Bon Jovi</li>
+                    <li>In the end – Linkin Park</li>
+                    <li>Medley: Proud Mary, Non non rien n’a change, Bro hymn</li>
+                    <li>Feel like a woman – Shania Twain</li>
+                    <li>Superstition – Stevie Wonder</li>
+                    <li>I’m in to folk – The Radios</li>
+                    <li>Walking on sunshine – Katrina & The Waves</li>
+                    <li>Don’t look back in anger – Oasis</li>
+                    <li>Le monde tourne mal – Axelle Red</li>
+                    <li>R U Mine – Arctic Monkeys</li>
+                    <li>I’m not so tough – Ilse DeLange</li>
+                    <li>Black horse & The Cherry Tree – KT Tunstall</li>
+                    <li>Oh Darkness – Admiral Freebee</li>
+                    <li>Just like a Pill - Pink</li>
+                    <li>Anja – Gorki</li>
+                    <li>Beer Fear – Lucy Spraggan</li>
+                    <li>Weak – Skunk Anansie</li>
+                    <li>Lost on you - LP</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -572,7 +600,8 @@ http://vi.be/vibe/profile/70e5feca-1c64-44fe-bd49-b424324ceef0/shows/past
                                 <span>info@thepixels.be</span>
                             </p>
                             <p><i class="fa fa-download"></i>
-                                <span><a href="resources/technische-fiche-THE-PIXELS-show-voorjaar-2018.pdf">Technische fiche</a></span></p>
+                                <span><a href="resources/technische-fiche-THE-PIXELS-show-voorjaar-2018.pdf">Technische fiche</a></span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -587,7 +616,7 @@ http://vi.be/vibe/profile/70e5feca-1c64-44fe-bd49-b424324ceef0/shows/past
                                     class="fa fa-youtube fa-2x"></i></a></li>
                             <li class="instagram"><a href="https://www.instagram.com/the.pixels.coverband/"><i
                                     class="fa fa-instagram fa-2x"></i></a></li>
-                            <li><a href="http://vi.be/thepixelscoverband"><img src="img/vibe-favicon.png"></a></li>
+                            <li><a href="http://vi.be/thepixels"><img src="img/vibe-favicon.png"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -644,64 +673,69 @@ http://vi.be/vibe/profile/70e5feca-1c64-44fe-bd49-b424324ceef0/shows/past
 
 <script>
     var past = "https://cors-proxy.htmldriven.com/?url=http://vi.be/vibe/profile/17e06d6c-8688-44d3-abf8-8c0a36283e12/shows/past";
+    var pastTemplate = {
+        '<>': 'div', 'class': "show row", 'html': [
+            {'<>': 'span', 'class': "showFullDate", 'html': '${dateFormatted}'}
+            ,
+            {
+                '<>': function () {
+                    if (this.link === "") {
+                        return "span";
+                    } else {
+                        return "a";
+                    }
+                }, 'class': 'showText', 'target': 'blank', 'href': '${link}', 'html': [
+                    {'<>': 'span', 'class': "showName", 'html': '${name}   '},
+                    {'<>': 'span', 'class': "showLocation", 'html': '${location}'}
+                ]
+            }
+        ]
+    };
 
     $.get(past).success(function (data) {
-
-        var t = {
-            '<>': 'div', 'class': "show row", 'html': [
-                {'<>': 'span', 'class': "showFullDate", 'html': '${dateFormatted}'}
-                ,
-                {
-                    '<>': function () {
-                        if (this.link === "") {
-                            return "span";
-                        } else {
-                            return "a";
-                        }
-                    }, 'class': 'showText', 'target': 'blank', 'href': '${link}', 'html': [
-                        {'<>': 'span', 'class': "showName", 'html': '${name}   '},
-                        {'<>': 'span', 'class': "showLocation", 'html': '${location}'}
-                    ]
-                }
-            ]
-        };
-
         var d = JSON.parse(data.body).shows;
         d.reverse();
-        $("#pastGigs").html(json2html.transform(d, t));
+        old = d.slice(10, 99999);
+        d = d.slice(0, 9);
+        $("#pastGigs").html(json2html.transform(d, pastTemplate));
     });
 
 
     var future = "https://cors-proxy.htmldriven.com/?url=http://vi.be/vibe/profile/17e06d6c-8688-44d3-abf8-8c0a36283e12/shows/upcoming";
+    var futureTemplate = {
+        '<>': 'div', 'class': "show row", 'html': [
+            {
+                '<>': 'div', 'class': "showDate", 'html': [
+                    {'<>': 'span', 'class': "showMonth", 'html': '${dateMonth}'},
+                    {'<>': 'span', 'class': "showDay", 'html': '${dateDay}'}
+                ]
+            },
+            {
+                '<>': function () {
+                    if (this.link === "") {
+                        return "span";
+                    } else {
+                        return "a";
+                    }
+                }, 'class': 'showText', 'target': 'blank', 'href': '${link}', 'html': [
+                    {'<>': 'div', 'class': "showName", 'html': '${name}   '},
+                    {'<>': 'div', 'class': "showLocation", 'html': '${location}'}
+                ]
+            }
+        ]
+    };
+
     $.get(future).success(function (data) {
-
-        var t = {
-            '<>': 'div', 'class': "show row", 'html': [
-                {
-                    '<>': 'div', 'class': "showDate", 'html': [
-                        {'<>': 'span', 'class': "showMonth", 'html': '${dateMonth}'},
-                        {'<>': 'span', 'class': "showDay", 'html': '${dateDay}'}
-                    ]
-                },
-                {
-                    '<>': function () {
-                        if (this.link === "") {
-                            return "span";
-                        } else {
-                            return "a";
-                        }
-                    }, 'class': 'showText', 'target': 'blank', 'href': '${link}', 'html': [
-                        {'<>': 'div', 'class': "showName", 'html': '${name}   '},
-                        {'<>': 'div', 'class': "showLocation", 'html': '${location}'}
-                    ]
-                }
-            ]
-        };
-
         var d = JSON.parse(data.body).shows;
-
-        $("#futureGigs").html(json2html.transform(d, t));
+        $("#futureGigs").html(json2html.transform(d, futureTemplate));
     });
+
+    function more(){
+        $("#pasterGigs").html(json2html.transform(old, pastTemplate) + "<a href=\"javascript:less()\">Minder...</a>");
+    }
+    function less(){
+        $("#pasterGigs").html("<a href=\"javascript:more()\">Meer...</a>")
+    }
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111702239-1"></script>

@@ -540,8 +540,16 @@ button:focus {
   background: url(../img/fill1.jpg) fixed no-repeat;
   background-size: contain; }
 
+#fillerPlay {
+  background: url(../img/merch.jpg) fixed no-repeat;
+  background-size: cover; }
+
 #filler2 {
   background: url(../img/fill2.jpg) fixed no-repeat;
+  background-size: cover; }
+
+#fillerFig {
+  background: url(../img/fillFig.png) fixed no-repeat;
   background-size: cover; }
 
 #music {
@@ -683,30 +691,22 @@ button:focus {
 /* ==========================================================================
  10. Counter Section Style
  ========================================================================== */
-.merch {
-  background-image: url(../img/merch.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; }
-  .merch .section-title {
-    color: #fff; }
-  .merch .section-subtitle {
-    color: #fff; }
-  .merch .facts-item {
-    text-align: center;
-    color: #fff; }
-    .merch .facts-item .icon {
-      margin-bottom: 30px; }
-      .merch .facts-item .icon i {
-        font-size: 50px;
-        color: #fff; }
-    .merch .facts-item .fact-count h3 {
-      font-size: 35px;
-      color: #fff;
-      margin-bottom: 15px; }
-    .merch .facts-item .fact-count h4 {
-      font-size: 20px;
-      font-weight: 400;
+#playlist .facts-item {
+  text-align: center;
+  color: #fff; }
+  #playlist .facts-item .icon {
+    margin-bottom: 30px; }
+    #playlist .facts-item .icon i {
+      font-size: 50px;
       color: #fff; }
+  #playlist .facts-item .fact-count h3 {
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 15px; }
+  #playlist .facts-item .fact-count h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff; }
 
 /* ==========================================================================
 11. Testimonial Section Style
@@ -748,7 +748,7 @@ button:focus {
  12. Team Section
   ========================================================================== */
 .team-inner p {
-  text-align: justify; }
+  text-align: left; }
 
 .single-team {
   position: relative;
@@ -978,8 +978,5 @@ footer {
 .brand {
   height: 50px;
   vertical-align: bottom; }
-
-.subBrand {
-  vertical-align: text-bottom; }
 
 /*# sourceMappingURL=main.css.map */

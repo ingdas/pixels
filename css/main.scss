@@ -1204,10 +1204,6 @@ footer {
   padding-left: 10px;
 }
 
-.showName {
-  color: #111;
-}
-
 .showLocation {
   color: #666666;
 }
@@ -1251,4 +1247,50 @@ footer {
 .introText {
   font-size: 20px;
   font-weight: 700;
+}
+
+.groen {
+  color: $preset !important;
+}
+
+.showFullDate {
+  width: 90px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.upMarg {
+  margin-top: 30px;
+}
+
+.futWrapper {
+  width: 90px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+a.showText:hover {
+  color: $preset !important;
+}
+
+a.showText {
+  color: #333 !important;
+}
+
+.playlistImg {
+  height: 70vh;
+}
+
+.noMarg {
+  margin-bottom: -7vh;
+}
+
+.wit {
+  color: white !important;
+}
+
+.plCont {
+  display: flex;
+  justify-content: center;
 }

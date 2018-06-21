@@ -979,4 +979,11 @@ footer {
   height: 50px;
   vertical-align: bottom; }
 
+.movie {
+  width: 100%;
+  height: 100%; }
+
+.introText {
+  font-size: 20px; }
+
 /*# sourceMappingURL=main.css.map */

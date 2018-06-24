@@ -355,7 +355,7 @@ button:focus {
     justify-content: center; }
   #hero-area #heroContent {
     position: absolute;
-    bottom: 0;
+    bottom: calc(100vh - 100vw * 1200/2105 + 10px);
     width: 100%; }
   #hero-area .overlay {
     position: absolute;
@@ -365,25 +365,24 @@ button:focus {
     left: 0px;
     background: #2e777f;
     opacity: 0.9; }
-  #hero-area .contents {
-    padding: 200px 0 130px; }
-    #hero-area .contents h1 {
-      color: #fff;
-      text-shadow: 6px 6px #2e777f;
-      font-size: 150px;
-      font-weight: 700;
-      margin-bottom: 25px; }
-    #hero-area .contents p {
-      font-family: "Dosis", sans-serif;
-      margin: 25px;
-      font-size: 42px;
-      color: #fff;
-      font-weight: 400;
-      line-height: 30px;
-      letter-spacing: 0.5px; }
-    #hero-area .contents .btn {
-      margin: 25px 25px 0px 0px;
-      text-transform: uppercase; }
+  #hero-area .contents h1 {
+    color: #fff;
+    text-shadow: 6px 6px #2e777f;
+    font-size: 150px;
+    font-weight: 700;
+    margin-bottom: 25px; }
+  #hero-area .contents p {
+    font-family: "Dosis", sans-serif;
+    margin: 25px;
+    font-size: 42px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-shadow: 0px 0px 3px #2e777f; }
+  #hero-area .contents .btn {
+    margin: 25px 25px 0px 0px;
+    text-transform: uppercase; }
   #hero-area .banner_bottom_btn {
     margin-top: 40px; }
     #hero-area .banner_bottom_btn i {
@@ -482,7 +481,16 @@ button:focus {
 .slicknav_menu {
   display: none; }
 
+@media screen and (min-width: 1100px) {
+  #heroContent {
+    bottom: 10px !important; } }
+@media screen and (min-width: 600px) and (max-width: 1149px) {
+  #hero-area {
+    height: 100vh !important; } }
 @media screen and (max-width: 1149px) {
+  #hero-area {
+    height: calc(100vw * 1200/916); }
+
   #heroImage {
     display: none !important; }
 
@@ -490,11 +498,14 @@ button:focus {
     width: 100vw;
     height: auto;
     display: inline-block !important;
-    position: absolute;
-    z-index: -2; }
+    position: absolute; }
+
+  #heroContent {
+    bottom: 10px !important; }
 
   h1.wow {
-    font-size: 85px !important; }
+    font-size: calc(30px + 6vw) !important;
+    text-shadow: calc(1vw) calc(1vw) #2e777f !important; }
 
   .navbar-header {
     width: 100%; }
@@ -559,8 +570,8 @@ button:focus {
  6. Features Section Style
   ========================================================================== */
 #filler1 {
-  background: url(../img/fill1.jpg) fixed no-repeat;
-  background-size: contain;
+  background: url(../img/fill1.jpg) no-repeat;
+  background-size: cover;
   background-position-x: center !important; }
 
 #fillerPlay {
@@ -734,42 +745,6 @@ button:focus {
     font-size: 20px;
     font-weight: 400;
     color: #fff; }
-
-/* ==========================================================================
-11. Testimonial Section Style
- ========================================================================== */
-#testimonial {
-  background: url(../img/testimonial-bg.jpg) fixed no-repeat;
-  background-size: cover;
-  color: #fff;
-  overflow: hidden;
-  position: relative; }
-
-.testimonial-item {
-  text-align: center; }
-  .testimonial-item img {
-    width: 80px;
-    border: 3px solid #fff;
-    height: 80px;
-    border-radius: 50%; }
-  .testimonial-item .testimonial-text h3 {
-    font-size: 15px;
-    font-weight: 700; }
-  .testimonial-item .testimonial-text span {
-    font-size: 14px;
-    color: #999; }
-  .testimonial-item .testimonial-text p {
-    font-size: 14px;
-    font-weight: 400;
-    padding: 36px 10px 30px 10px;
-    margin: 0;
-    line-height: 30px; }
-
-.owl-theme .owl-controls .owl-page span {
-  background: #2e777f; }
-
-.owl-theme .owl-controls {
-  margin-top: 20px; }
 
 /* ==========================================================================
  12. Team Section
@@ -968,13 +943,16 @@ footer {
 .showDate {
   width: 33px;
   font-size: 20px;
-  text-align: center; }
+  text-align: center;
+  white-space: nowrap; }
 
 .show {
-  padding: 3px; }
+  padding: 3px;
+  flex-wrap: nowrap; }
 
 .showText {
-  padding-left: 10px; }
+  padding-left: 10px;
+  white-space: nowrap; }
 
 .showLocation {
   color: #666666; }
@@ -1017,7 +995,8 @@ footer {
 .showFullDate {
   width: 90px;
   text-align: right;
-  margin-right: 10px; }
+  margin-right: 10px;
+  white-space: nowrap; }
 
 .upMarg {
   margin-top: 30px; }

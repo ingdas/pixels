@@ -439,7 +439,7 @@ button:focus {
   }
   #heroContent {
     position: absolute;
-    bottom: 0;
+    bottom: calc(100vh - 100vw * 1200/2105 + 10px);
     width: 100%;
   }
   color: #fff;
@@ -455,7 +455,6 @@ button:focus {
     opacity: 0.9;
   }
   .contents {
-    padding: 200px 0 130px;
     h1 {
       color: #fff;
       text-shadow: 6px 6px $preset;
@@ -471,6 +470,8 @@ button:focus {
       font-weight: 400;
       line-height: 30px;
       letter-spacing: 0.5px;
+      text-shadow: 0px 0px 3px $preset;
+
     }
     .btn {
       margin: 25px 25px 0px 0px;
@@ -605,7 +606,25 @@ button:focus {
   display: none;
 }
 
+@media screen and (min-width: 1100px) {
+  #heroContent {
+    bottom: 10px !important;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1149px) {
+
+  #hero-area {
+    height: 100vh !important;
+  }
+}
+
 @media screen and (max-width: 1149px) {
+
+  #hero-area{
+    height: calc(100vw * 1200/916);
+  }
+
   #heroImage {
     display: none !important;
   }
@@ -615,11 +634,15 @@ button:focus {
     height: auto;
     display: inline-block !important;
     position: absolute;
-    z-index: -2;
+  }
+
+  #heroContent {
+    bottom: 10px !important;
   }
 
   h1.wow {
-    font-size: 85px !important;
+    font-size: calc(30px + 6vw) !important;
+    text-shadow: calc(1vw) calc(1vw) $preset !important;
   }
 
   .navbar-header {
@@ -696,8 +719,8 @@ button:focus {
   ========================================================================== */
 
 #filler1 {
-  background: url(../img/fill1.jpg) fixed no-repeat;
-  background-size: contain;
+  background: url(../img/fill1.jpg) no-repeat;
+  background-size: cover;
   background-position-x: center !important;
 }
 
@@ -917,53 +940,6 @@ button:focus {
       }
     }
   }
-}
-
-/* ==========================================================================
-11. Testimonial Section Style
- ========================================================================== */
-#testimonial {
-  background: url(../img/testimonial-bg.jpg) fixed no-repeat;
-  background-size: cover;
-  color: #fff;
-  overflow: hidden;
-  position: relative;
-}
-
-.testimonial-item {
-  text-align: center;
-  img {
-    width: 80px;
-    border: 3px solid #fff;
-    height: 80px;
-    border-radius: 50%;
-  }
-  .testimonial-text {
-    h3 {
-      font-size: 15px;
-      font-weight: 700;
-    }
-    span {
-      font-size: 14px;
-      color: #999;
-    }
-    p {
-      font-size: 14px;
-      font-weight: 400;
-      padding: 36px 10px 30px 10px;
-      margin: 0;
-      line-height: 30px;
-    }
-
-  }
-}
-
-.owl-theme .owl-controls .owl-page span {
-  background: $preset;
-}
-
-.owl-theme .owl-controls {
-  margin-top: 20px;
 }
 
 /* ==========================================================================
@@ -1228,14 +1204,17 @@ footer {
   width: 33px;
   font-size: 20px;
   text-align: center;
+  white-space: nowrap;
 }
 
 .show {
   padding: 3px;
+  flex-wrap: nowrap;
 }
 
 .showText {
   padding-left: 10px;
+  white-space: nowrap;
 }
 
 .showLocation {
@@ -1291,6 +1270,7 @@ footer {
   width: 90px;
   text-align: right;
   margin-right: 10px;
+  white-space: nowrap;
 }
 
 .upMarg {

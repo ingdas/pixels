@@ -943,8 +943,7 @@ footer {
 .showDate {
   width: 33px;
   font-size: 20px;
-  text-align: center;
-  white-space: nowrap; }
+  text-align: center; }
 
 .show {
   padding: 3px;
@@ -952,7 +951,7 @@ footer {
 
 .showText {
   padding-left: 10px;
-  white-space: nowrap; }
+  max-width: calc(100vw - 100px); }
 
 .showLocation {
   color: #666666; }
@@ -993,7 +992,7 @@ footer {
   color: #2e777f !important; }
 
 .showFullDate {
-  width: 90px;
+  width: 84px;
   text-align: right;
   margin-right: 10px;
   white-space: nowrap; }
@@ -1002,7 +1001,7 @@ footer {
   margin-top: 30px; }
 
 .futWrapper {
-  width: 90px;
+  width: 84px;
   display: flex;
   justify-content: flex-end;
   margin-right: 10px; }

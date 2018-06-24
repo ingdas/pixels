@@ -1204,7 +1204,6 @@ footer {
   width: 33px;
   font-size: 20px;
   text-align: center;
-  white-space: nowrap;
 }
 
 .show {
@@ -1214,7 +1213,7 @@ footer {
 
 .showText {
   padding-left: 10px;
-  white-space: nowrap;
+  max-width: calc(100vw - 100px);
 }
 
 .showLocation {
@@ -1267,7 +1266,7 @@ footer {
 }
 
 .showFullDate {
-  width: 90px;
+  width: 84px;
   text-align: right;
   margin-right: 10px;
   white-space: nowrap;
@@ -1278,11 +1277,12 @@ footer {
 }
 
 .futWrapper {
-  width: 90px;
+  width: 84px;
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
 }
+
 
 a.showText:hover {
   color: $preset !important;

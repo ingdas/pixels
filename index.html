@@ -119,26 +119,18 @@
             </ul>
             <!-- Mobile Menu End -->
         </div>
-
-
     </nav>
     <!-- Navbar End -->
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col-md-10">
-                <div class="contents text-center">
-                    <p style="height: 350px"></p>
+    <img id="heroImage" align="middle" src="./img/landing.jpg"/>
+    <img id="heroImageP" align="middle" src="./img/landingP.jpg"/>
+    <div id="heroContent" class="contents text-center">
+        <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">THE PIXELS</h1>
 
-                    <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">THE PIXELS</h1>
+        <hr class="whitelines">
+        <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.4s">Hete kolen onder uw
+            voeten</p>
+        <hr class="whitelines">
 
-                    <hr class="whitelines">
-                    <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.4s">Hete kolen onder uw
-                        voeten</p>
-                    <hr class="whitelines">
-
-                </div>
-            </div>
-        </div>
     </div>
 </header>
 <!-- Header Section End -->
@@ -742,6 +734,11 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-111702239-1');
+
+    $(window).stellar({
+        scrollProperty: 'transform',
+        horizontalScrolling: false
+    });
 </script>
 
 </body>

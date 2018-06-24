@@ -340,11 +340,23 @@ button:focus {
 3. Hero Area
 ========================================================================== */
 #hero-area {
-  background: url(../img/landing.jpg) fixed no-repeat;
-  background-size: cover;
+  height: 100vh;
   color: #fff;
   overflow: hidden;
   position: relative; }
+  #hero-area #heroImageP {
+    display: none; }
+  #hero-area #heroImage {
+    width: 100vw;
+    height: auto;
+    display: inline-block;
+    position: absolute; }
+  #hero-area #heroContainer {
+    justify-content: center; }
+  #hero-area #heroContent {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
   #hero-area .overlay {
     position: absolute;
     width: 100%;
@@ -470,7 +482,17 @@ button:focus {
 .slicknav_menu {
   display: none; }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1149px) {
+  #heroImage {
+    display: none !important; }
+
+  #heroImageP {
+    width: 100vw;
+    height: auto;
+    display: inline-block !important;
+    position: absolute;
+    z-index: -2; }
+
   h1.wow {
     font-size: 85px !important; }
 
@@ -538,23 +560,28 @@ button:focus {
   ========================================================================== */
 #filler1 {
   background: url(../img/fill1.jpg) fixed no-repeat;
-  background-size: contain; }
+  background-size: contain;
+  background-position-x: center !important; }
 
 #fillerPlay {
   background: url(../img/merch.jpg) fixed no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position-x: center !important; }
 
 #filler2 {
   background: url(../img/fill2.jpg) fixed no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position-x: center !important; }
 
 #fillerFig {
   background: url(../img/fillFig.png) fixed no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position-x: center !important; }
 
 #music {
   background: url(../img/fillMusic.jpg) fixed no-repeat;
   background-size: cover;
+  background-position-x: center !important;
   color: #fff;
   overflow: hidden;
   position: relative; }

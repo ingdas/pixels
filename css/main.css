@@ -1025,4 +1025,7 @@ a.showText {
   display: flex;
   justify-content: center; }
 
+#contact h5 {
+  font-size: 30px; }
+
 /*# sourceMappingURL=main.css.map */

@@ -40,8 +40,8 @@ if (empty($_POST["message"])) {
 }
 
 
-$EmailTo = "ingdas@gmail.com";
-$Subject = "New Message Received";
+$EmailTo = "webform@thepixels.be";
+$Subject = "Bericht van de pixels website";
 
 // prepare email body text
 $Body = "";
@@ -51,8 +51,8 @@ $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
-$Body .= "Subject: ";
-$Body .= $msg_subject;
+$Body .= "Phone: ";
+$Body .= $phone;
 $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;

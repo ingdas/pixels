@@ -653,7 +653,7 @@
 <footer>
     <div class="container">
         Website: Ingmar Dasseville &copy; 2018 <br>
-        Our Visual Team: Zourab Moussaev (photos), Karlien Bekkers (graphic design)
+        Our Visual Team: Zourab Moussaev (photos), Karlien Bekkers (graphic design and costume)
     </div>
 </footer>
 <!-- Footer Section End -->
@@ -720,7 +720,7 @@
         var d = JSON.parse(data.body).shows;
         d.reverse();
         old = d.slice(10, 99999);
-        d = d.slice(0, 9);
+        d = d.slice(0, 10);
         $("#pastGigs").html(json2html.transform(d, pastTemplate));
     });
 

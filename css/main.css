@@ -575,22 +575,22 @@ button:focus {
   background-position-x: center !important; }
 
 #fillerPlay {
-  background: url(../img/merch.jpg) fixed no-repeat;
+  background: url(../img/merch.jpg) no-repeat;
   background-size: cover;
   background-position-x: center !important; }
 
 #filler2 {
-  background: url(../img/fill2.jpg) fixed no-repeat;
+  background: url(../img/fill2.jpg) no-repeat;
   background-size: cover;
   background-position-x: center !important; }
 
 #fillerFig {
-  background: url(../img/fillFig.png) fixed no-repeat;
+  background: url(../img/fillFig.png) no-repeat;
   background-size: cover;
   background-position-x: center !important; }
 
 #music {
-  background: url(../img/fillMusic.jpg) fixed no-repeat;
+  background: url(../img/fillMusic.jpg) no-repeat;
   background-size: cover;
   background-position-x: center !important;
   color: #fff;

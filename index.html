@@ -7,9 +7,9 @@
     <meta name="keywords" content="The Pixels, Cover, Music, Band, Leuven">
     <meta name="author" content="Ingmar Dasseville">
     <meta name="description" content="Een coverband met een eigenzinnige invulling van een uitgebreid repertoire actuele hits en gouden nummers uit de jaren 90 en later. Een overdosis jeugdig enthousiasme van jonge twintigers, de snedigheid van elke Leuvense student en de bezetenheid van muzikanten die hun instrument kennen en hun publiek mee willen nemen op hun reis. Dat zijn The Pixels."/>
-    <meta property="og:image" content="http://www.thepixels.be/newsite/img/landing.jpg" />
+    <meta property="og:image" content="https://www.thepixels.be/img/landing.jpg" />
     <meta property="og:site_name" content="The Pixels" />
-    <meta property="og:url" content="http://www.thepixels.be/" />
+    <meta property="og:url" content="https://www.thepixels.be/" />
     <meta property="og:title" content="The Pixels, hete kolen onder uw voeten" />
     <meta property="og:description" content="Een coverband met een eigenzinnige invulling van een uitgebreid repertoire actuele hits en gouden nummers uit de jaren 90 en later. Een overdosis jeugdig enthousiasme van jonge twintigers, de snedigheid van elke Leuvense student en de bezetenheid van muzikanten die hun instrument kennen en hun publiek mee willen nemen op hun reis. Dat zijn The Pixels."/>
     <meta property="og:type" content="website" />
@@ -94,6 +94,11 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/thepixelscoverband/" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
                 </li>
             </ul>
             <!-- Mobile Menu Start -->
@@ -541,7 +546,7 @@
                 <hr class="lines">
                 <h3>Past Concerts</h3>
                 <div class="upMarg" id="pastGigs"></div>
-                <div id="pasterGigs"><a href="javascript:more()" target="_blank">Meer...</a></div>
+                <div id="pasterGigs"><a href="javascript:more()">Meer...</a></div>
             </div>
         </div>
     </div>
@@ -646,7 +651,7 @@
                         </form>
                     </div>
                 </div>
-        </div>
+            </div>
         </div>
     </div>
 </section>
@@ -699,7 +704,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.json2html/1.0.0/jquery.json2html.min.js"></script>
 
 <script>
-    var past = "https://cors-proxy.htmldriven.com/?url=http://vi.be/vibe/profile/17e06d6c-8688-44d3-abf8-8c0a36283e12/shows/past";
+    var past = "/php/proxy.php?csurl=https://vi.be/vibe/profile/17e06d6c-8688-44d3-abf8-8c0a36283e12/shows/past";
     var pastTemplate = {
         '<>': 'div', 'class': "show row", 'html': [
             {'<>': 'span', 'class': "showFullDate", 'html': '${dateFormatted}'}
@@ -720,7 +725,7 @@
     };
 
     $.get(past).success(function (data) {
-        var d = JSON.parse(data.body).shows;
+        var d = data.shows;
         d.reverse();
         old = d.slice(10, 99999);
         d = d.slice(0, 10);
@@ -728,7 +733,7 @@
     });
 
 
-    var future = "https://cors-proxy.htmldriven.com/?url=http://vi.be/vibe/profile/17e06d6c-8688-44d3-abf8-8c0a36283e12/shows/upcoming";
+    var future = "/php/proxy.php/?csurl=https://vi.be/vibe/profile/17e06d6c-8688-44d3-abf8-8c0a36283e12/shows/upcoming";
     var futureTemplate = {
         '<>': 'div', 'class': "show row", 'html': [
             {
@@ -757,7 +762,7 @@
     };
 
     $.get(future).success(function (data) {
-        var d = JSON.parse(data.body).shows;
+        var d = data.shows;
         $("#futureGigs").html(json2html.transform(d, futureTemplate));
     });
 

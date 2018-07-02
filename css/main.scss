@@ -239,7 +239,7 @@ button:focus {
    2.3 Social Iocns
    ========================================================================== */
 .social-icons {
-  margin-top: 40px
+  margin-top: 20px
 }
 
 .social-icons ul {
@@ -1312,4 +1312,13 @@ a.showText {
 
 #contact h5 {
   font-size: 30px;
+  margin-top: 10px;
+}
+
+.underl:hover {
+  color: $preset!important;
+}
+
+.email {
+  font-size: 15px;
 }

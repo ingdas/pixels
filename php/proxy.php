@@ -39,8 +39,8 @@ define('CSAJAX_DEBUG', false);
  */
 $valid_requests = array(
     // 'example.com'
-    'https://vi.be/vibe/profile/17e06d6c-8688-44d3-abf8-8c0a36283e12/shows/past',
-    'https://vi.be/vibe/profile/17e06d6c-8688-44d3-abf8-8c0a36283e12/shows/upcoming'
+    'https://vi.be/platform/vibe/profile/17e06d6c-8688-44d3-abf8-8c0a36283e12/shows/past',
+    'https://vi.be/platform/vibe/profile/17e06d6c-8688-44d3-abf8-8c0a36283e12/shows/upcoming'
 );
 
 /**

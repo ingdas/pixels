@@ -56,6 +56,16 @@ $preset-drack: #37707d;
   2. GENERAL
   ========================================================================== */
 
+
+.rotated {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -moz-transform: rotate(180deg); /* Firefox */
+  -webkit-transform: rotate(180deg); /* Safari and Chrome */
+  -o-transform: rotate(180deg); /* Opera */
+}
+
+
 .whitelines {
   margin: auto;
   width: 70px;
@@ -758,6 +768,13 @@ button:focus {
   background-size: cover;
   background-position-x: center !important;
 }
+
+#merchParal {
+  background: url(../img/merchParal.jpg) no-repeat;
+  background-size: cover;
+  background-position-x: center !important;
+}
+
 
 #music {
   background: url(../img/fillMusic.jpg) no-repeat;

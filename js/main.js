@@ -174,5 +174,11 @@
        ========================================================================== */
     $('#loader').fadeOut();
 
+
+    if(Math.random() > 0.5) {
+        $('#heroImage').addClass('rotated');
+        $('#heroImageP').addClass('rotated');
+    }
+
 }(jQuery));
 

@@ -200,6 +200,23 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   }
 }
 
+.btn-common-invert {
+  border: 1px solid $preset;
+  background: #fff;
+  position: relative;
+  color: $preset;
+  z-index: 1;
+  border-radius: 30px;
+  &:hover {
+    color: #fff;
+    background: $preset-drack;
+    border-color: $preset-drack;
+    transition: all .50s ease-in-out;
+    -moz-transition: all .50s ease-in-out;
+    -webkit-transition: all .50s ease-in-out;
+  }
+}
+
 .btn-border {
   color: #fff;
   background-color: transparent;
@@ -622,7 +639,7 @@ button:focus {
 @media screen and (max-width: 1149px) {
 
   #hero-area{
-    height: calc(100vw * 1200/916);
+    height: calc(100vw * 1798/1200);
   }
 
   #heroImage {
@@ -633,7 +650,7 @@ button:focus {
     width: 100vw;
     height: auto;
     display: inline-block !important;
-    position: absolute;
+    position: static;
   }
 
   #heroContent {

@@ -16,7 +16,7 @@ function submitForm(){
     var name = $("#Mname").val();
     var email = $("#Memail").val();
     var phone = $("#Madres").val();
-    var msg_subject = "Pixels Website E-mail";
+    var msg_subject = "Pixels Merch Request";
     var message = $("#Mmessage").val();
 
 
